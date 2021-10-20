@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MTC Preparación</string>
+    <string name="title_home">Inicio</string>
+    <string name="title_practice">Entrenamiento</string>
+    <string name="title_test">Simulacro</string>
+    <string name="exam_countdown">Tu examen es en %d días</string>
+    <string name="practice_level_title">Nivel de Aprendizaje</string>
+    <string name="practice_button_text">Practicar</string>
+    <string name="test_average_title">Promedio de Simulacros</string>
+    <string name="test_button_text">Simulacro</string>
+    <string name="previous">Anterior</string>
+    <string name="next">Siguiente</string>
+</resources>

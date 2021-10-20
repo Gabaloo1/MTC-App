@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="dashboardFragment"
+            type="com.gabrielsotelo.mtc.ui.DashboardFragment" />
+        <variable
+            name="viewModel"
+            type="com.gabrielsotelo.mtc.model.AppViewModel" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginBottom="50dp">
+
+
+            <!--
+            <TextView
+                android:id="@+id/title_practice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_practice"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="8dp"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textAppearance="?attr/textAppearanceSubtitle1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/item_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <!-- Buttons -->
+
+                    <LinearLayout
+                        android:id="@+id/linear_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:id="@+id/question_card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="4dp"
+                            android:layout_marginVertical="15dp"
+                            android:gravity="center"
+                            android:text=""
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            tools:text="Ubicación de la pregunta obtenida de la base de datos" />
+
+                        <ImageView
+                            android:id="@+id/question_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            />
+
+
+                        <Button
+                            android:id="@+id/choice_card_a"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="6dp"
+                            android:text=""
+                            android:textAppearance="?attr/textAppearanceBody1"
+                            app:icon="@drawable/ic_label_black_24dp"
+                            tools:text="Alternativa A"
+                            android:onClick="@{(view) -> dashboardFragment.verifyChoice(view, 'a')}"/>
+
+                        <Button
+                            android:id="@+id/choice_card_b"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="6dp"
+                            android:text=""
+                            android:textAppearance="?attr/textAppearanceBody1"
+                            app:icon="@drawable/ic_label_black_24dp"
+                            tools:text="Alternativa B"
+                            android:onClick="@{(view) -> dashboardFragment.verifyChoice(view, 'b')}"/>
+
+                        <Button
+                            android:id="@+id/choice_card_c"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="6dp"
+                            android:text=""
+                            android:textAppearance="?attr/textAppearanceBody1"
+                            app:icon="@drawable/ic_label_black_24dp"
+                            tools:text="Alternativa C"
+                            android:onClick="@{(view) -> dashboardFragment.verifyChoice(view, 'c')}"/>
+
+                        <Button
+                            android:id="@+id/choice_card_d"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="6dp"
+                            android:text=""
+                            android:textAppearance="?attr/textAppearanceBody1"
+                            app:icon="@drawable/ic_label_black_24dp"
+                            tools:text="Alternativa D"
+                            android:onClick="@{(view) -> dashboardFragment.verifyChoice(view, 'd')}"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/navigate_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="10dp"
+
+                            android:gravity="center"
+                            android:text="@string/previous"
+                            app:icon="@drawable/ic_back_black_24dp"/>
+
+                        <Button
+                            android:id="@+id/navigate_next"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="10dp"
+
+                            android:gravity="center"
+                            android:text="@string/next"
+                            app:icon="@drawable/ic_baseline_navigate_next_24"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+    </androidx.core.widget.NestedScrollView>
+</layout>

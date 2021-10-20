@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "254878222533",
+    "project_id": "mtc-app-86002",
+    "storage_bucket": "mtc-app-86002.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254878222533:android:dad4098933b9f1f0a7c8ac",
+        "android_client_info": {
+          "package_name": "com.gabrielsotelo.mtc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "254878222533-i19d2uki4ss5res0scjq3sm9n21euken.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwt6WFMki-X3nUeQAFyUkeTpOWP9pRbQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "254878222533-i19d2uki4ss5res0scjq3sm9n21euken.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
